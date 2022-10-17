@@ -1,5 +1,5 @@
 <div class="container">
-	<h1 class="greeting">Sveicināti! <em class="proti">proti.lv</em> vēl top!</h1>
+	<h1 class="greeting">Sveicināti! <em class="proti">proti.lv</em>!</h1>
 </div>
 
 <style>
