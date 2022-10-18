@@ -1,7 +1,10 @@
 <div class="outer">
 	<div class="inner">
-		<a href="/if.pdf">if prezentācija</a>
-		<iframe title="Sarošanās jeb if" src="/if.pdf" height="400" width="700" />
+		<a class="sm" href="/if.pdf">if prezentācija</a>
+		<div class="lg">
+			<h2>if prezentācija</h2>
+			<iframe title="Sarošanās jeb if" src="/if.pdf" height="400" width="700" />
+		</div>
 	</div>
 </div>
 
@@ -29,9 +32,29 @@
 		background-color: blueviolet;
 		margin-bottom: 30px;
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		text-align: center;
 		transition: all 0.4s;
 	}
 	a:hover {
 		background-color: blue;
+	}
+
+	h2 {
+		color: purple;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+
+	.lg {
+		display: none;
+	}
+
+	@media (min-width: 740px) {
+		.sm {
+			display: none;
+		}
+
+		.lg {
+			display: block;
+		}
 	}
 </style>
