@@ -7,11 +7,20 @@
 		</div>
 	</div>
 </div>
+<div class="outer">
+	<div class="inner">
+		<a class="sm" href="/KSIM2022_fin_uzd.pdf">KSIM uzdevumi</a>
+		<div class="lg">
+			<h2>KSIM uzdevumi</h2>
+			<iframe title="Sarošanās jeb if" src="/KSIM2022_fin_uzd.pdf" height="400" width="700" />
+		</div>
+	</div>
+</div>
 
 <style>
 	.outer {
 		width: 100vw;
-		height: 100vh;
+		height: 80vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;

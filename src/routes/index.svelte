@@ -2,7 +2,7 @@
 	<h1 class="greeting">Sveicināti! <em class="proti">proti.lv</em>!</h1>
 </div>
 
-<footer><a href="/sp">Sporta programmēšanas prezentācijas</a></footer>
+<footer><a href="/sp">Sporta programmēšana</a></footer>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap');
