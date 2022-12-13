@@ -1,8 +1,10 @@
 <div class="container">
-	<h1 class="greeting">Sveicināti! <em class="proti">proti.lv</em>!</h1>
+	<h1 class="greeting">Sveicināti <em class="proti">proti.lv</em>!</h1>
 </div>
 
-<footer><a href="/sp">Sporta programmēšana</a></footer>
+<footer>
+	<a href="/christmas">Draugiem Group konkurss</a><a href="/sp">Sporta programmēšana</a>
+</footer>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap');
@@ -29,7 +31,6 @@
 	}
 
 	footer {
-		display: block;
 		width: 100%;
 		position: fixed;
 		bottom: 0;
@@ -40,11 +41,14 @@
 	}
 
 	footer > a {
-		display: block;
 		text-decoration: none;
 		margin-bottom: 1rem;
 		color: rgba(132, 23, 233, 0.3);
 		transition: all 0.4s;
+	}
+
+	footer > a:first-child {
+		margin-right: 20px;
 	}
 
 	footer > a:hover {
