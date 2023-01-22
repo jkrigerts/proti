@@ -1,5 +1,6 @@
 <div class="container">
 	<h1 class="greeting">Sveicināti <em class="proti">proti.lv</em>!</h1>
+	<a class="btn" href="https://skolo.lv/course/view.php?id=742234">JPS skolo.lv</a>
 </div>
 
 <footer>
@@ -16,6 +17,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 		margin: 0;
 	}
 
@@ -53,5 +55,33 @@
 
 	footer > a:hover {
 		color: rgba(132, 23, 233, 0.6);
+	}
+
+	.btn {
+		padding: 15px 20px;
+		background-color: rgb(132, 23, 233);
+		color: white;
+		text-decoration: none;
+		position: relative;
+	}
+
+	.btn:hover {
+		background-color: rgb(96, 17, 169);
+		cursor: pointer;
+	}
+
+	.btn::before {
+		content: '';
+		border: 2px solid rgb(132, 23, 233);
+		padding: inherit;
+		position: absolute;
+		inset: 0;
+		opacity: 1;
+		transition: all 0.5s;
+	}
+
+	.btn:hover::before {
+		transform: scaleX(1.2) scaleY(1.5);
+		opacity: 0;
 	}
 </style>
