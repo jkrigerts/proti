@@ -1,5 +1,6 @@
 <div class="container">
 	<h1 class="greeting">Sveicināti <em class="proti">proti.lv</em>!</h1>
+	<a class="btn" href="/ai">Atvērto durvju diena</a>
 	<a class="btn" href="https://skolo.lv/course/view.php?id=742234">JPS skolo.lv</a>
 </div>
 
@@ -13,12 +14,13 @@
 	.container {
 		font-family: 'Josefin Sans', sans-serif;
 		width: 100vw;
-		height: 100vh;
+		height: 90vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
 		margin: 0;
+		gap: 30px;
 	}
 
 	.greeting {
@@ -59,6 +61,7 @@
 
 	.btn {
 		padding: 15px 20px;
+		font-size: 1.2rem;
 		background-color: rgb(132, 23, 233);
 		color: white;
 		text-decoration: none;
