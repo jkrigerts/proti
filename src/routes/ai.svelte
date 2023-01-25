@@ -11,14 +11,16 @@
 		<li>
 			Lejuplādē, lūdzu, 3 datnes jeb failus:
 			<ul>
-				<li><a href="ai-start/index.html" download="index.html">index.html</a></li>
+				<li><a href="ai-start/datne.html" download>datne.html</a></li>
 				<li><a href="ai-start/script.js" download>script.js</a></li>
 				<li><a href="ai-start/style.css" download>style.css</a></li>
 			</ul>
 		</li>
+		<li>Datni <em>datne.html</em> pārsauc par <em>index.html</em></li>
 		<li>Mapē <em>Dokumenti</em> izveido mapi <em>ai</em></li>
 		<li>Mapē <em>ai</em> pārvieto 3 lejuplādētās datnes.</li>
 		<li>Atver šo mapi lietojumprogrammā <em>Visual Studio Code</em>.</li>
+		<li>Apakšējā labajā stūrī nospied <em>Go Live</em></li>
 		<li>Atver, apskati katru no datnēm.</li>
 	</ol>
 	<p>Kaut arī pamatkods jau ir dots, Tev ir jāizlabo radušās kļūdas.</p>
