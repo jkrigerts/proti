@@ -11,7 +11,7 @@
 		<li>
 			Lejuplādē, lūdzu, 3 datnes jeb failus:
 			<ul>
-				<li><a href="ai-start/index.html" download>index.html</a></li>
+				<li><a href="ai-start/index.html" download="index.html">index.html</a></li>
 				<li><a href="ai-start/script.js" download>script.js</a></li>
 				<li><a href="ai-start/style.css" download>style.css</a></li>
 			</ul>
