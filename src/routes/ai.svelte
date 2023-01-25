@@ -133,6 +133,7 @@
 		font-weight: 700;
 		font-family: Arial, Helvetica, sans-serif;
 		color: #9800f0;
+		word-break: break-all;
 	}
 
 	.try {
