@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pogas animācija</title>
+		<style>
+			body {
+				margin: 100px;
+			}
+
+			button {
+				padding: 15px 20px;
+				font-size: 1.2rem;
+				background-color: rgb(132, 23, 233);
+				border: none;
+				color: white;
+				text-decoration: none;
+				position: relative;
+			}
+
+			button:hover {
+				background-color: rgb(96, 17, 169);
+				cursor: pointer;
+			}
+
+			button::before {
+				content: '';
+				border: 2px solid rgb(132, 23, 233);
+				padding: inherit;
+				position: absolute;
+				inset: 0;
+				opacity: 1;
+				transition: all 0.5s;
+			}
+
+			button:hover::before {
+				transform: scaleX(1.2) scaleY(1.5);
+				opacity: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<button>Poga</button>
+	</body>
+</html>
