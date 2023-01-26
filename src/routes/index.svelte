@@ -1,7 +1,7 @@
 <div class="container">
 	<h1 class="greeting">Sveicināti <em class="proti">proti.lv</em>!</h1>
 	<a class="btn" href="/ai">Atvērto durvju diena</a>
-	<a href="btn.txt" download>Pogas efekta atrisinājums. Tev tips uz .html jāmaina</a>
+	<a href="/btn.txt" download>Pogas efekta atrisinājums. Tev tips uz .html jāmaina</a>
 	<a class="btn" href="https://skolo.lv/course/view.php?id=742234">JPS skolo.lv</a>
 </div>
 
