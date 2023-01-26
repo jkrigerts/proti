@@ -24,7 +24,7 @@
 		<li>Atver, apskati katru no datnēm.</li>
 	</ol>
 	<p>Kaut arī pamatkods jau ir dots, Tev ir jāizlabo radušās kļūdas.</p>
-	<h2>Lapas skelets <em>index.html</em></h2>
+	<h2>Lapas skelets ar <em>HTML</em></h2>
 	<ol>
 		<li>
 			Datnē <em>index.html</em> 11. rindiņā pirms vārda <code>Objekti</code> ieraksi
@@ -35,7 +35,7 @@
 			ieraksti tekstu <code>Atpazīt</code>
 		</li>
 	</ol>
-	<h2>Lapas izskats <em>style.css</em></h2>
+	<h2>Lapas izskats ar <em>CSS</em></h2>
 	<ol>
 		<li>
 			Datnē <em>index.html</em> 7. rindiņu aizstāj ar
@@ -51,7 +51,7 @@
 			<code>background-image</code>
 		</li>
 	</ol>
-	<h2>Lapas funkcionalitāte <em>script.js</em></h2>
+	<h2>Lapas funkcionalitāte ar <em>JavaScript</em></h2>
 	<ol>
 		<li>
 			Datnē <em>index.html</em> 8. rindiņu aizstāj ar
