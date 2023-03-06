@@ -227,15 +227,15 @@
 		padding-bottom: 20px;
 	}
 
-	@media (max-width: 700px) {
-		main {
-			padding: 0 10px;
-		}
-	}
-
 	@media (max-width: 1090px) {
 		main {
 			margin: 5px;
+		}
+	}
+
+	@media (max-width: 700px) {
+		main {
+			padding: 0 10px 30px 10px;
 		}
 	}
 
@@ -360,6 +360,7 @@
 		margin: 10px 0;
 		color: #222;
 		font-size: 1.2rem;
+		margin-left: -40px;
 	}
 
 	.long-code {
