@@ -1,5 +1,6 @@
 <div class="container">
 	<h1 class="greeting">Sveicināti <em class="proti">proti.lv</em>!</h1>
+	<a class="btn" href="ievads">Ievads programmēšanā</a>
 	<a class="btn" href="/ai">Atvērto durvju diena</a>
 	<a class="btn" href="https://skolo.lv/course/view.php?id=742234">JPS skolo.lv</a>
 </div>
