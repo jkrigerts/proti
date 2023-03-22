@@ -34,7 +34,8 @@
 			</li>
 
 			<li>
-				Atver datni <code>sript.js</code> - <strong>tur Tu veiksi visas turpmākās izmaiņas</strong>.
+				Atver datni <code>script.js</code> -
+				<strong>tur Tu veiksi visas turpmākās izmaiņas</strong>.
 			</li>
 		</ol>
 	</article>
@@ -74,7 +75,7 @@
 					</li>
 					<li>
 						Aiz izsauktajām komandām
-						<code>move</code> jaunā rindiņā ieraksti komandu <code>await&nbsp;pickup();</code>
+						<code>move</code> jaunā rindiņā ieraksti komandu <code>await&nbsp;pickUp();</code>
 					</li>
 				</ol>
 			</li>
@@ -103,6 +104,8 @@
 				kasti.
 			</li>
 		</ol>
+
+
 	</article>
 	<article>
 		<h2>Iemāci Rene griezties pa kreisi</h2>
