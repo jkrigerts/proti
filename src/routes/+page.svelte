@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte';
+  import { onMount } from 'svelte'; 
 
   import Code from "./Code.svelte";
   import Result from "./Result.svelte";
