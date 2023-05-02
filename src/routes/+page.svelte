@@ -6,7 +6,7 @@
   import Congratulations from './Congratulations.svelte';
 
   let globalScore = 0;
-  let totalScore = 1;
+  let totalScore = 9;
   let customCommands = {"pārvietot": ["ņemt();", "iet();", "likt();"]};
 
   const handleScore = () => {
