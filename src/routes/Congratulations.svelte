@@ -1,9 +1,11 @@
 <script>
+  import { fade, fly } from 'svelte/transition';
+
   export let handleClose;
 </script>
 
-<div class="backdrop">
-  <div class="modal">
+<div class="backdrop" transition:fade>
+  <div class="modal" transition:fly="{{ y: 200, duration: 2000 }}">
     <div class="close">
       <img src="close.svg" alt="X" on:click={handleClose}/>
     </div>
