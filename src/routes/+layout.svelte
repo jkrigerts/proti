@@ -4,6 +4,7 @@
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 	* {
 		box-sizing: border-box;

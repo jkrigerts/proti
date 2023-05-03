@@ -336,10 +336,9 @@
   <div class="code-wrapper" style="--textarea-height:{textareaHeight}px;">
     <div class="code">
       <div class="line-numbers">
-          {#each Array(numberOfLines-1) as i}
+          {#each Array(numberOfLines) as i}
             <span></span>
           {/each}
-          <span></span>
       </div>
       <textarea bind:value={code} on:keyup={lineNumbersHanler} placeholder="Šeit jāraksta komandas"/>
     </div>
@@ -368,6 +367,7 @@
     background-color: var(--success);
     border: none;
     transition: all 0.3s;
+    font-size: 14px;
   }
 
   .code-wrapper {
@@ -413,7 +413,7 @@
   .code {
     display: flex;
     gap: 13px;
-    font-family: monospace;
+    font-family: 'Source Code Pro', monospace;
     line-height: 32px;
     border-radius: 2px;
     height: 60vh;
@@ -431,14 +431,15 @@
     color: #FFF;
     outline: none;
     resize: none;
-    font-size: 18px;
+    font-size: 21px;
     width: calc(100% - 25px);
     overflow: hidden;
+    font-family: inherit;
   }
 
   .line-numbers {
     width: 20px;
-    font-size: 18px;
+    font-size: 21px;
     text-align: right;
     line-height: 32px;
   }

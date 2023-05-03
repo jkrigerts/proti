@@ -8,9 +8,15 @@
   let globalScore = 0;
   let totalScore = 9;
   let customCommands = {"pārvietot": ["ņemt();", "iet();", "likt();"]};
+  let modal = false;
 
   const handleScore = () => {
     globalScore++;
+    if (globalScore == totalScore) modal = true;
+  }
+
+  const handleModal = () => {
+    modal = !modal;
   }
 
   const handleCustomCommands = (newCommandName, newCommandSequence) => {
@@ -39,8 +45,8 @@
 </svelte:head>
 
 <Result globalScore={globalScore} totalScore={totalScore} reset={reset}/>
-{#if globalScore == totalScore}
-  <Congratulations/>
+{#if modal}
+  <Congratulations handleClose={handleModal}/>
 {/if}
 
 <section class="heading">
@@ -148,7 +154,7 @@
       <ul>
         <li>Sākuma Rene ātrums ir 1.</li>
         <li>Ja vēlies,
-        vari Rene likt kustēties lēnāk, apaļajās iekavās rakstos skaitli, kas mazāks par 1, piemēram, <code>ātrums(0,5);</code></li>
+        vari Rene likt kustēties lēnāk, apaļajās iekavās rakstot skaitli, kas mazāks par 1, piemēram, <code>ātrums(0,5);</code></li>
         <li>Vari likt Rene kustēties arī pavisam ātri, izsaucot komandu <code>ātrums(50);</code></li>
         <li>Vari pamēģināt iekavās ierakstīt pat vēl lielāku vai mazāku skaitli!</li>
         <li>Komandu <code>ātrums(10);</code> var izsaukt tik bieži, cik vēlies.</li>
@@ -193,8 +199,17 @@
     <p class="mb-40">Veiksmi! 🙂</p>
     <Code rows={6} columns={6} reneInit={[0, 4, 0]} boxInit={[5, 0]} targetInit={[0, 5]} no={9} aim={"target"} obstacles={[[1, 1], [1, 2], [1, 3], [1, 4], [1, 5], [3, 1], [3, 2], [3, 3], [3, 4], [3, 0], [4, 4], [5, 2], [4, 0]]} handleScore={handleScore} customCommands={customCommands} handleCustomCommands={handleCustomCommands}/>
   </article>
-  
 
+  <article>
+    <h2>Paldies!</h2>
+    <p>Paldies, ka palīdzēji Rene! Ceru, ka esi guvis priekšstatu, kas ir programmēšana.</p>
+    <p>Kad dodies prom, lūdzu, izdzēs savu rezultātu, noklikšķinot uz atkritnes ikonas <img class="trash" src="trash-solid.svg" alt="trash" on:click={reset}/>.</p>
+  </article>
+
+  <article>
+    <p class="center">Veidojis ar ❤️ Jēkabs Krīgerts</p>
+  </article>
+  
 </section>
 
 
@@ -403,5 +418,21 @@
     color: var(--primary-color);
     font-size: 2.5rem;
     margin: 0 25px;
+  }
+
+  .center {
+    text-align: center;
+    color: var(--primary-color-light);
+    padding-bottom: 20px;
+  }
+
+  .trash {
+    width: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .trash:hover {
+    transform: rotate(15deg) scale(1.1);
   }
 </style>
