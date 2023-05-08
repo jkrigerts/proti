@@ -353,7 +353,7 @@
             <span></span>
           {/each}
       </div>
-      <textarea bind:value={code} on:keyup={lineNumbersHanler} placeholder="Šeit jāraksta komandas"/>
+      <textarea bind:value={code} on:keyup={lineNumbersHanler} placeholder="Šeit jāraksta komandas" spellcheck="false"/>
     </div>
     <button on:click={runCode} style={`--success:${success ? "green" : (loading ? "#cff4ff" : "white")}; color:${success ? "white" : "black"}`}>{loading ? "Apturēt" : success ? "Izpildīts" : "Izpildīt"}</button>
     {#if success}
