@@ -474,4 +474,24 @@
       min-height: 15vh;
     }
   }
+
+  /* width */
+.code::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.code::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.code::-webkit-scrollbar-thumb {
+  background: #506882;
+}
+
+/* Handle on hover */
+.code::-webkit-scrollbar-thumb:hover {
+  background: #36516d;
+}
 </style>
