@@ -96,7 +96,7 @@
     <p class="mb-40">Palīdzi Rene kasti nogādāt mērķī.</p>
     <ol>
       <li>Liec, lai Rene aiziet līdz kastei un savāc to kā iepriekš.</li>
-      <li>Aizvirsi Rene līdz mērķim.</li>
+      <li>Aizvirzi Rene līdz mērķim.</li>
       <li>Liec Rene nolikt kasti, izsaucot komandu <code>likt();</code></li>
     </ol>
     <Code reneInit={[0, 1, 0]} boxInit={[2, 1]} targetInit={[3, 1]} no={2} aim={"target"} handleScore={handleScore} customCommands={customCommands} handleCustomCommands={handleCustomCommands}/>
@@ -126,7 +126,7 @@
           <li>tad jāliek tukšuma rakstzīme,</li>
           <li>tad jāuzraksta komandas nosaukums <code>paKreisi</code>, kurš jāpabeidz ar <code>()</code></li>
           <li>jāliek tukšuma rakstzīme,</li>
-          <li>rindiņa jānoslēdz ar atverošo figūriekavu <code>&#123;</code></li>
+          <li>pirmā rindiņa jānoslēdz ar atverošo figūriekavu <code>&#123;</code></li>
         </ol>
       </li>
       <li>Nākošajā rindiņā jāliek 2 tukšuma rakstzīmes un jāizsauc tāda komanda, kuru Rene jau zina.</li>
@@ -296,7 +296,7 @@
 
 	@media (max-width: 478px) {
 		.heading > img {
-			top: 66px;
+			top: 55px;
 		}
 	}
 
