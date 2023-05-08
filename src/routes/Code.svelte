@@ -77,6 +77,12 @@
   }
 
   const runCode = async () => {
+    error = false;
+    if (loading) {
+        error = true;
+        return;
+      }
+
     loading = true;
     time = 1000;
     reneX = reneInit[0];
@@ -96,6 +102,10 @@
       if (error) {
         error = false;
         loading = false;
+        reneX = reneInit[0];
+        reneY = reneInit[1];
+        reneD = reneInit[2];
+        box = [...boxInit];
         return;
       }
       if (newCommandUnderWay) {
@@ -319,6 +329,9 @@
 
   const repeatLoop = async (n, command) => {
     for (let i = 0; i < n; i++) {
+      if (error) {
+        return;
+      }
       await matchCommandAndComplete(command);
     }
   }
@@ -342,7 +355,7 @@
       </div>
       <textarea bind:value={code} on:keyup={lineNumbersHanler} placeholder="Šeit jāraksta komandas"/>
     </div>
-    <button on:click={runCode} style={`--success:${success ? "green" : "white"}; color:${success ? "white" : "black"}`} disabled={loading}>Izpild{loading ? "a..." : success ? "īts" : "īt"}</button>
+    <button on:click={runCode} style={`--success:${success ? "green" : (loading ? "#cff4ff" : "white")}; color:${success ? "white" : "black"}`}>{loading ? "Apturēt" : success ? "Izpildīts" : "Izpildīt"}</button>
     {#if success}
       <img src="check.webp" alt="Check" class="success"/>
      {/if}
