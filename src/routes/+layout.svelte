@@ -16,6 +16,10 @@
     margin: 0;
   }
 
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
   main {
     max-width: 1180px;
     margin: 0 auto;

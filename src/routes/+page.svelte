@@ -27,7 +27,11 @@
   const reset = () => {
     globalScore = 0;
     localStorage.clear();
-    window.location.reload();
+    scroll(0, 0);
+    
+    setTimeout(() => {window.location.reload();}, 1000)
+    
+    
   }
 
   onMount(() => {
