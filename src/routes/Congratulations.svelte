@@ -1,5 +1,7 @@
 <script>
   import { fade, fly } from 'svelte/transition';
+  import { Confetti } from "svelte-confetti";
+
 
   export let handleClose;
 </script>
@@ -16,6 +18,10 @@
   </div>
 </div>
 
+<div class="confetti" transition:fade>
+<Confetti x={[-5, 5]} y={[0, 0.1]} delay={[500, 2000]} infinite duration=5000 amount=200 size=13 fallDistance="100vh" />
+</div>
+
 <style>
   .backdrop {
     position: fixed;
@@ -27,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 998;
+    z-index: 997;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     overflow: hidden;
@@ -72,5 +78,18 @@
   .close > img {
     width: 100%;
     height: 100%;
+  }
+
+  .confetti {
+    position: fixed;
+    top: -50px;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 998;
   }
 </style>

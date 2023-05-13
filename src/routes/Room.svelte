@@ -8,6 +8,7 @@
   export let target = [1, 1];
   export let start = [0, 0];
   export let obstacles = [];
+  export let success = false;
 </script>
 
 <div class="room" style="--rows: {rows}; --columns: {columns}; --direction: {reneD == 2 ? 0 : reneD}; --flip: {reneD == 2 ? -1 : 1}">

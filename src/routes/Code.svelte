@@ -360,7 +360,7 @@
       <img src="check.webp" alt="Check" class="success"/>
      {/if}
   </div>
-  <Room rows={rows} columns={columns} start={[reneInit[0], reneInit[1]]} reneX={reneX} reneY={reneY} reneD={reneD} target={target} box={box} obstacles={obstacles}/>
+  <Room rows={rows} columns={columns} start={[reneInit[0], reneInit[1]]} reneX={reneX} reneY={reneY} reneD={reneD} target={target} box={box} obstacles={obstacles} success={success && !loading}/>
 
 </div>
 
