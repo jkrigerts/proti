@@ -240,7 +240,7 @@
 		text-align: center;
 		font-size: 2rem;
 		margin-top: 0;
-		color: var(--primary-color-light);;
+		color: var(--primary-color-light);
 	}
 
 	@media (max-width: 600px) {
